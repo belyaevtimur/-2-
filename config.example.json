@@ -1,0 +1,22 @@
+# запуск с конфигурацией
+python -m src.main config.json
+
+# сборка и тесты
+make build
+make test
+
+
+---
+
+## `config.example.json`
+
+```json
+{
+  "package": "serde",
+  "repo_url": "https://crates.io/api/v1/crates",
+  "test_mode": false,
+  "version": "1.0.0",
+  "output_file": "graph.svg",
+  "ascii_tree": true,
+  "max_depth": 3
+}
